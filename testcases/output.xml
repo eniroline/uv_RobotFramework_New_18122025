@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4 (Python 3.9.6 on darwin)" generated="2025-12-19T21:43:47.655825" rpa="false" schemaversion="5">
+<suite id="s1" name="Six Test" source="/Users/elenabrahinska/PythonProject/uv_RobotFramework_New_18122025/testcases/six_test.robot">
+<test id="s1-t1" name="My Six Test Case" line="7">
+<kw name="Open Chrome Without Password Popups" owner="resources_2" type="SETUP">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-12-19T21:43:47.779877" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x10a76e580&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-12-19T21:43:47.779638" elapsed="0.000261"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-features\=PasswordLeakDetection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2025-12-19T21:43:47.779990" elapsed="0.000160"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--guest</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2025-12-19T21:43:47.780214" elapsed="0.000140"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:47.780596" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${user_url}</arg>
+<arg>${user_browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-19T21:43:47.780431" elapsed="3.078021"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-12-19T21:43:50.859910" elapsed="0.339839"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-19T21:43:51.201122" level="INFO">Starting test in Chrome</msg>
+<arg>Starting test in ${user_browser}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.200333" elapsed="0.000895"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-19T21:43:51.201902" level="INFO">Test URL: https://www.saucedemo.com/</msg>
+<arg>Test URL: ${user_url}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.201516" elapsed="0.000432"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<status status="PASS" start="2025-12-19T21:43:47.779168" elapsed="3.422878"/>
+</kw>
+<kw name="Login to Webpage" owner="resources_2">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.203684" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.203176" elapsed="0.134631"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.338199" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2025-12-19T21:43:51.352780" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${user_password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.337992" elapsed="0.038762"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.377170" level="INFO">Clicking button 'name=login-button'.</msg>
+<arg>name=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.376909" elapsed="0.052335"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-19T21:43:51.430283" level="INFO">Username: standard_user, Password: secret_sauce</msg>
+<arg>Username: ${username}, Password: ${user_password}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.429607" elapsed="0.000722"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.432701" level="INFO">Current location is 'https://www.saucedemo.com/inventory.html'.</msg>
+<arg>https://www.saucedemo.com/inventory.html</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.430438" elapsed="0.002335"/>
+</kw>
+<arg>${standard_user}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-12-19T21:43:51.202721" elapsed="0.230137"/>
+</kw>
+<kw name="Add Product to Cart" owner="resources_2">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.447040" level="INFO">${product_name} = Sauce Labs Backpack</msg>
+<var>${product_name}</var>
+<arg>xpath:${product_id}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.433583" elapsed="0.013567"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.459761" level="INFO">${product_price} = $29.99</msg>
+<var>${product_price}</var>
+<arg>xpath:${product_price}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.447279" elapsed="0.012530"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-19T21:43:51.461447" level="INFO">Product name: Sauce Labs Backpack</msg>
+<arg>Product name: ${product_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.459961" elapsed="0.001552"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-19T21:43:51.461924" level="INFO">Product price: $29.99</msg>
+<arg>Product price: ${product_price}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.461645" elapsed="0.000314"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.462189" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.462078" elapsed="0.034018"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.500814" level="INFO">Current page contains element 'id:remove-sauce-labs-backpack'.</msg>
+<arg>id:remove-sauce-labs-backpack</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.496319" elapsed="0.004555"/>
+</kw>
+<arg>//*[@id="item_4_title_link"]/div</arg>
+<arg>//*[@id="inventory_container"]/div/div[1]/div[2]/div[2]/div</arg>
+<arg>add-to-cart-sauce-labs-backpack</arg>
+<status status="PASS" start="2025-12-19T21:43:51.433216" elapsed="0.067723"/>
+</kw>
+<kw name="Change Sorting Method" owner="resources_2">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.501504" level="INFO">Selecting options from selection list 'xpath://*[@id="header_container"]/div[2]/div/span/select' by value hilo.</msg>
+<arg>xpath://*[@id="header_container"]/div[2]/div/span/select</arg>
+<arg>${sorting_method}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.501357" elapsed="0.035686"/>
+</kw>
+<arg>${sort_hilo}</arg>
+<status status="PASS" start="2025-12-19T21:43:51.501117" elapsed="0.036023"/>
+</kw>
+<kw name="Logout from Webpage" owner="resources_2">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.537740" level="INFO">Clicking button 'id:react-burger-menu-btn'.</msg>
+<arg>id:react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.537609" elapsed="0.030133"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:logout_sidebar_link</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.567945" elapsed="0.217385"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-12-19T21:43:51.785713" level="INFO">Clicking link 'id:logout_sidebar_link'.</msg>
+<arg>id:logout_sidebar_link</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.785513" elapsed="0.042295"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-19T21:43:51.828392" level="INFO">Logged out from Webpage</msg>
+<arg>Logged out from Webpage</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.828059" elapsed="0.000403"/>
+</kw>
+<status status="PASS" start="2025-12-19T21:43:51.537387" elapsed="0.291145"/>
+</kw>
+<kw name="Close Browser and log" owner="resources_2" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.829132" elapsed="0.079385"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-12-19T21:43:51.908895" level="INFO">Finished test.</msg>
+<arg>Finished test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-12-19T21:43:51.908664" elapsed="0.000271"/>
+</kw>
+<status status="PASS" start="2025-12-19T21:43:51.828867" elapsed="0.080127"/>
+</kw>
+<status status="PASS" start="2025-12-19T21:43:47.778775" elapsed="4.130291"/>
+</test>
+<status status="PASS" start="2025-12-19T21:43:47.656795" elapsed="4.252712"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Six Test" id="s1" pass="1" fail="0" skip="0">Six Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
