@@ -1,6 +1,11 @@
 [project]
-name = "robotframework-new-18122025"
+name = "uv-robotframework-new-18122025"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.9"
-dependencies = []
+dependencies = [
+    "robotframework>=7.4",
+    "robotframework-seleniumlibrary>=6.8.0",
+    "selenium>=4.36.0",
+    "webdriver-manager>=4.0.2",
+]
