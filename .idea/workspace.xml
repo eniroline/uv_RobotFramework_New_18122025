@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="29303bfe-f2e7-457f-9f16-28f4cf164d5f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uv_RobotFramework_New_18122025.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uv_RobotFramework_New_18122025.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/resources.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/resources.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/resources_2.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/resources_2.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/fifth_test_negative.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/fifth_test_negative.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/first_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/first_test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/four_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/four_test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/second_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/second_test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/six_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/six_test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/third_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/third_test.robot" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "eniroline"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/eniroline/uv_RobotFramework_New_18122025.git",
+    "accountId": "da940397-047e-46d0-8738-deacf7031254"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="373NlDRYbx9sLTPAhqLCmSowYwD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/elenabrahinska/PythonProject/uv_RobotFramework_New_18122025&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0978a7220b69-9867c7d4c0a4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.28294.336" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29303bfe-f2e7-457f-9f16-28f4cf164d5f" name="Changes" comment="" />
+      <created>1766127944508</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766127944508</updated>
+    </task>
+    <servers />
+  </component>
+</project>
